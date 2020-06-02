@@ -1,0 +1,97 @@
+ codepen link: https://codepen.io/micherre/pen/wvMwZrP?editors=1100 
+  
+   1. What is Semantic HTML? 
+   semantic html offers other developers and your future self information on what each area of the code is intended to convey.
+    2. What is HTML used for? 
+    hypertext markup language is the tree format language browsers like to read
+    3. What is an attribute and where do we put it? 
+    elements go in tags and tell the browser what to do with everything in between the opening and closing tags
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    tells you what the main header for the page is and should only be used once
+    5. Name two tags that have required attributes
+    img and a
+    6. What do we put in the head of our HTML document? 
+    all of the information we want the browser to know that isn't user facing e.g. tab name and link to style sheet 
+    7. What is an id? 
+    it's a very specific element that can only be used once per page because it ties 1:1
+    8. What elements can I add an id to? 
+    any element
+    9. How many times can I use the same id on a page? 
+    once
+    10. What is a class? 
+    slightly less "heavy" or specific element than ID
+    11. What elements can I add a class to? 
+    any element
+    12. How many times can I use the same class on a page? 
+    as many times as you like
+    13. How do I get my link to open in a new tab?
+    target= '_blank' to be put in tag after src
+    14. What is the alt attribute in the image tag used for? 
+    to give information on what the image contains for the benefit of other developers and, more importantly, for those who cannot see.
+    15. How do I reference an id?
+    #
+    16. What is the difference between a section and a div
+    section is semantic and should denote separate sections of text on the page while a div is used throughout stylistically to easily move chunks of text/images that belong together around the page
+    17. What is CSS used for? 
+    to style a page of HTML
+    18. How to we select an element? Example - every h2 on the page
+    you simply have to write the name of the element (selector) as well as every element it's nested in beforehand unless it has an attribute you can more specifically reference
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    a class should be used when you expect to stylistically manipulate several elements in the HTML in the same way because classes can be reused throughout while any specific ID can only be used as an identifier for one element on a page so that is appropriate when you are confident you will at no point want to reuse the stylistic manipulation you have placed on that specific element.
+    class ex: when you have paragraphs that are bordered individually but the border and text style is identical on all of them
+    id ex: if your page has a header that is stylistically very different to the rest of the page. here, you can reasonably say you will not want any other element on the page, now or in the future, to have the same style.
+    20. How do we select classes in CSS?
+    .
+    21. How do we select a p element with a single class of “human””?
+    .human
+    22. What is a parent child selector? When would this be useful? 
+    this is when, instead of giving elements in a section class or id attributes, you write out the line of ownership as a means of telling the browser which element to target when implementing that block of CSS styling. it can be useful for keeping code clean. 
+    23. How do you select all links within a div with the class of sidebar?
+    .sidebar div a{}
+    24. What is a pseudo selector?
+    it selects elements that are in a specific state i.e last and hover
+    25. What do we use the change the spacing between lines?
+    line-height
+    26. What do we use to change the spacing between letters?
+    letter-spacing
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    text-transform: uppercase, text-transform: lowercase, text-transform: capitalize
+    28. How do I add a 1px border around my div that is dotted and black?
+    div{
+        border: 1px dotted black;
+    }
+    29. How do I select everything on the page? 
+    *
+    30. How do I write a comment in CSS?
+    /* */
+    31. How do I find out what file I am in, when I am using the command line? 
+    it says it on your line but you can ls to see what is inside or cd .. to go out one and ls that ?
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    rm you have to use this delicately because it will not give you any warnings, it will simply delete permanently with one click
+    34. Why should I use version control? 
+    you don't want 1000 documents saved separately after each change but you need to branch so you can try different code out without breaking your master
+    35. How often should I commit to github?
+    regularly ?
+    36. What is the command we would use to push our repo up to github? 
+    git push or git push -u origin micherre-fox
+    37. Walk me through Lambda's git flow. 
+    fork the day's lambda repository
+    add tl as collaborator
+    get link for your fork of repo from clone button
+    go into decided directory with git
+    pull repo from github through 'git clone' command on git
+    go into new repo in git using 'cd' command
+    create new branch in git using 'git checkout -b 'micherre-fox' command
+    open repo into VSC
+    work on files in this branch
+    save
+    add repo changes in git using 'git add .'
+    commit repo changes in git using 'git commit -m "something about changes"'
+    push branch with new committed changes to github through git using the command 'git push -u origin micherre-fox'
+    on github go to forked copy of repo and change branch to your edited version from the lambda master
+    click create pull request
+    on pull request page change base repository from lambda to your forked version
+    add TL as a reviewer
+    submit pull request
