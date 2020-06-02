@@ -37,9 +37,9 @@
     18. How to we select an element? Example - every h2 on the page
     you simply have to write the name of the element (selector) as well as every element it's nested in beforehand unless it has an attribute you can more specifically reference
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
-    a class should be used when you expect to stylistically manipulate several elements in the HTML in the same way because classes can be reused throughout while any specific ID can only be used as an identifier for one element on a page so that is appropriate when you are confident you will at no point want to reuse the stylistic manipulation you have placed on that specific element.
+    a class should be used when you expect to stylistically manipulate several elements in the HTML in the same way because classes can be reused throughout while any specific ID can only be used as an identifier for one element on a page so that is appropriate when you are confident you will at no point want to reuse the stylistic manipulation you have placed on that specific element or ID is useful if the element belongs to a class/classes and you would like to override the styles of that class for the specific element.
     class ex: when you have paragraphs that are bordered individually but the border and text style is identical on all of them
-    id ex: if your page has a header that is stylistically very different to the rest of the page. here, you can reasonably say you will not want any other element on the page, now or in the future, to have the same style.
+    id ex: You have a class attribute on many paragraphs that are all styled blue but you decide a center paragraph needs special attention so you want it to be red without losing the other styling properties on that class, you can give that paragraph an id and tell it to make the text blue. Because ID is more specific than class, the browser will defer to that command while still keeping all other styling properties of the class.
     20. How do we select classes in CSS?
     .
     21. How do we select a p element with a single class of “human””?
@@ -65,7 +65,7 @@
     30. How do I write a comment in CSS?
     /* */
     31. How do I find out what file I am in, when I am using the command line? 
-    it says it on your line but you can ls to see what is inside or cd .. to go out one and ls that ?
+    pwd
     32. Using the command line - how do I see a list of files/folders in my current folder?
     ls
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
